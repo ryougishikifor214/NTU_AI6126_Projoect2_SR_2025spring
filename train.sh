@@ -1,5 +1,5 @@
 #!/bin/bash
-# conda activate 6126p2
+conda activate /home/featurize/work/6126p2
 
 PROJECT_ROOT=$(dirname "$(realpath "$0")")
 MODELS_CONFIGS_DIR=$(realpath "$PROJECT_ROOT/assets/configs")

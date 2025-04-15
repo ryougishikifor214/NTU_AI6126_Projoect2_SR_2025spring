@@ -10,7 +10,7 @@ default_hooks = dict(
         by_epoch=False,
         interval=5000,
         max_keep_ckpts=10,
-        out_dir='./work_dirs/',
+        out_dir='/home/boogiepop/codebase/AI6126project2/out/edsr',
         rule='greater',
         save_best='PSNR',
         save_optimizer=True,
@@ -58,7 +58,7 @@ env_cfg = dict(
     cudnn_benchmark=False,
     dist_cfg=dict(backend='nccl'),
     mp_cfg=dict(mp_start_method='fork', opencv_num_threads=4))
-experiment_name = 'edsr_x4c64b16_1xb16-300k_div2k'
+experiment_name = 'edsr'
 load_from = None
 log_level = 'INFO'
 log_processor = dict(by_epoch=False, type='LogProcessor', window_size=100)
@@ -111,7 +111,7 @@ param_scheduler = dict(
         200000,
     ], type='MultiStepLR')
 resume = False
-save_dir = './work_dirs/'
+save_dir = '/home/boogiepop/codebase/AI6126project2/out/edsr'
 scale = 4
 set14_data_root = 'data/Set14'
 set14_dataloader = dict(
@@ -401,4 +401,4 @@ visualizer = dict(
     vis_backends=[
         dict(type='LocalVisBackend'),
     ])
-work_dir = './work_dirs/edsr_x4c64b16_1xb16-300k_div2k'
+work_dir = '/home/boogiepop/codebase/AI6126project2/out/edsr'
