@@ -1,5 +1,7 @@
 data/
 work_dirs/
+out/
+env/
 
 
 # Byte-compiled / optimized / DLL files
