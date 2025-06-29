@@ -1,0 +1,4 @@
+[submodule "mmagic"]
+	path = mmagic
+	url = git@github.com:ryougishikifor214/mmagic.git
+	branch = 6126_p2_v120
